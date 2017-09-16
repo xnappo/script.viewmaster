@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon  id="script.viewmaster" name="ViewMaster" version="0.0.1" provider-name="Team B">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>https://emby.media/community/index.php?/topic/46651-embycon/</forum>
+    <website>https://emby.media/community/index.php?/topic/46651-embycon/</website>
+    <source>https://github.com/xnappo/viewmaster</source>
+    <summary lang="en">Set views the way your want 'em</summary>
+    <description lang="en">Script to set skin views</description>
+  </extension>
+</addon>
