@@ -29,8 +29,6 @@ kodi_version = int(xbmc.getInfoLabel('System.BuildVersion')[:2])
 def mainEntryPoint():
     log.info("===== ViewMaster START =====")
 
-    settings = xbmcaddon.Addon(id='script.viewmaster')
-
     log.info("Running Python: " + str(sys.version_info))
     log.info("Kodi BuildVersion: " + xbmc.getInfoLabel("System.BuildVersion"))
     log.info("Kodi Version: " + str(kodi_version))
@@ -75,6 +73,8 @@ def setView(viewType):
 def showSetViews():
     log.info("showSetViews Called")
     log.info(__cwd__)
+    settings = xbmcaddon.Addon(id='script.viewmaster')
+    settings. setSetting('init', 'true')    
     defaultViews = DefaultViews("DefaultViews.xml", __cwd__, "default", "720p")
     defaultViews.doModal()
     del defaultViews
