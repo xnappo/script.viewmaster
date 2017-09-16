@@ -4,7 +4,7 @@
     <zorder>2</zorder>
 	<coordinates>
 		<system>1</system>
-		<left>315</left>
+		<left>415</left>
 		<top>50</top>
 	</coordinates>
 	<include>dialogeffect</include>
@@ -13,7 +13,7 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>650</width>
+			<width>450</width>
 			<height>500</height>
 			<texture border="40">bg.png</texture>
 		</control>
@@ -29,7 +29,7 @@
             <textcolor>blue</textcolor>
 		</control>
 
-		<control type="label" id="3019">
+		<!--control type="label" id="3019">
 			<left>400</left>
 			<top>45</top>
 			<width>380</width>
@@ -38,7 +38,7 @@
             <label></label>
             <align>left</align>
             <textcolor>blue</textcolor>
-		</control>
+		</control-->
      
 		<control type="label" id="3021">
 			<left>30</left>
@@ -61,7 +61,7 @@
             <ondown>3011</ondown>
             <font>font14</font>
         </control>
-        <control type="button" id="3050">
+        <!--control type="button" id="3050">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>
 			<texturefocus border="1" colordiffuse="ff525252">white.png</texturefocus>
             <left>400</left>
@@ -73,7 +73,7 @@
             <onleft>3010</onleft>
             <ondown>3051</ondown>
             <font>font14</font>
-        </control>
+        </control-->
        
 		<control type="label" id="3022">
 			<left>30</left>
@@ -96,7 +96,7 @@
             <ondown>3012</ondown>
             <font>font14</font>
         </control>
-        <control type="button" id="3051">
+        <!--control type="button" id="3051">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>
 			<texturefocus border="1" colordiffuse="ff525252">white.png</texturefocus>
             <left>400</left>
@@ -108,7 +108,7 @@
             <onleft>3011</onleft>
             <ondown>3052</ondown>
             <font>font14</font>
-        </control>
+        </control-->
 
         <control type="label" id="3023">
 			<left>30</left>
@@ -131,7 +131,7 @@
             <ondown>3013</ondown>
             <font>font14</font>
         </control>
-        <control type="button" id="3052">
+        <!--control type="button" id="3052">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>
 			<texturefocus border="1" colordiffuse="ff525252">white.png</texturefocus>
             <left>400</left>
@@ -143,7 +143,7 @@
             <onleft>3012</onleft>
             <ondown>3053</ondown>
             <font>font14</font>
-        </control>
+        </control-->
         
         <control type="label" id="3024">
 			<left>30</left>
@@ -166,7 +166,7 @@
             <ondown>3014</ondown>
             <font>font14</font>
         </control>
-        <control type="button" id="3053">
+        <!--control type="button" id="3053">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>
 			<texturefocus border="1" colordiffuse="ff525252">white.png</texturefocus>
             <left>400</left>
@@ -178,7 +178,7 @@
             <onleft>3013</onleft>
             <ondown>3054</ondown>
             <font>font14</font>
-        </control>
+        </control-->
 
         <control type="label" id="3025">
 			<left>30</left>
@@ -201,7 +201,7 @@
             <ondown>3110</ondown>
             <font>font14</font>
         </control>
-        <control type="button" id="3054">
+        <!--control type="button" id="3054">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>
 			<texturefocus border="1" colordiffuse="ff525252">white.png</texturefocus>
             <left>400</left>
@@ -213,7 +213,7 @@
             <onleft>3014</onleft>
             <ondown>3110</ondown>
             <font>font14</font>
-        </control>
+        </control-->
         
         <control type="button" id="3110">
 			<texturenofocus border="1" colordiffuse="ff161616">white.png</texturenofocus>

@@ -64,10 +64,10 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
         # load current default views
         savedData = loadSkinDefaults()
         self.defaultView = savedData.get("view", {})
-        self.defaultSort = savedData.get("sort", {})
+        #self.defaultSort = savedData.get("sort", {})
 
         self.getControl(3110).setLabel(i18n('save'))
-        self.getControl(3019).setLabel(i18n('default_sort'))
+        #self.getControl(3019).setLabel(i18n('default_sort'))
         self.getControl(3020).setLabel(i18n('default_view'))
         self.getControl(3021).setLabel(i18n('movies'))
         self.getControl(3022).setLabel(i18n('boxsets'))
@@ -87,16 +87,16 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
         name = self.getViewNameById(self.defaultView.get("Episodes"))
         self.getControl(3014).setLabel(name)
 
-        name = self.getSortNameById(self.defaultSort.get("Movies"))
-        self.getControl(3050).setLabel(name)
-        name = self.getSortNameById(self.defaultSort.get("BoxSets"))
-        self.getControl(3051).setLabel(name)
-        name = self.getSortNameById(self.defaultSort.get("Series"))
-        self.getControl(3052).setLabel(name)
-        name = self.getSortNameById(self.defaultSort.get("Seasons"))
-        self.getControl(3053).setLabel(name)
-        name = self.getSortNameById(self.defaultSort.get("Episodes"))
-        self.getControl(3054).setLabel(name)
+        #name = self.getSortNameById(self.defaultSort.get("Movies"))
+        #self.getControl(3050).setLabel(name)
+        #name = self.getSortNameById(self.defaultSort.get("BoxSets"))
+        #self.getControl(3051).setLabel(name)
+        #name = self.getSortNameById(self.defaultSort.get("Series"))
+        #self.getControl(3052).setLabel(name)
+        #name = self.getSortNameById(self.defaultSort.get("Seasons"))
+        #self.getControl(3053).setLabel(name)
+        #name = self.getSortNameById(self.defaultSort.get("Episodes"))
+        #self.getControl(3054).setLabel(name)
 
     def onFocus(self, controlId):
         pass
@@ -152,9 +152,9 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
             control = self.getControl(controlID)
             control.setLabel(self.getNextViewName(control.getLabel()))
 
-        elif controlID >= 3050 and controlID <= 3054:
-            control = self.getControl(controlID)
-            control.setLabel(self.getNextSortName(control.getLabel()))
+        #elif controlID >= 3050 and controlID <= 3054:
+        #    control = self.getControl(controlID)
+        #    control.setLabel(self.getNextSortName(control.getLabel()))
 
         elif controlID == 3110:
 
@@ -164,11 +164,11 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
             self.setViewId("Seasons", 3013)
             self.setViewId("Episodes", 3014)
 
-            self.setSortId("Movies", 3050)
-            self.setSortId("BoxSets", 3051)
-            self.setSortId("Series", 3052)
-            self.setSortId("Seasons", 3053)
-            self.setSortId("Episodes", 3054)
+            #self.setSortId("Movies", 3050)
+            #self.setSortId("BoxSets", 3051)
+            #self.setSortId("Series", 3052)
+            #self.setSortId("Seasons", 3053)
+            #self.setSortId("Episodes", 3054)
 
             __addondir__ = xbmc.translatePath(__addon__.getAddonInfo('profile'))
             view_list_path = os.path.join(__addondir__, "default_views.json")
