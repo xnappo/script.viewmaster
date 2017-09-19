@@ -16,7 +16,7 @@ class HomeWindow():
     """
 
     def __init__(self):
-        self.id_string = 'plugin.video.embycon-%s'
+        self.id_string = 'script.viewmaster-%s'
         self.window = xbmcgui.Window(10000)
 
     def getProperty(self, key):
@@ -39,7 +39,7 @@ class HomeWindow():
 def addMenuDirectoryItem(label, path, folder=True, thumbnail=None):
     li = xbmcgui.ListItem(label, path=path)
     if thumbnail is None:
-        thumbnail = "special://home/addons/plugin.video.embycon/icon.png"
+        thumbnail = "special://home/addons/script.viewmaster/icon.png"
     li.setIconImage(thumbnail)
     li.setThumbnailImage(thumbnail)
     xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=path, listitem=li, isFolder=folder)

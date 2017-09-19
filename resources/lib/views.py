@@ -56,7 +56,7 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
         skin_views = defaultViewData.get(skin_used, None)
         log.info("Current skin views: " + str(skin_views))
         if skin_views is None:
-            xbmcgui.Dialog().notification(__addon__.getAddonInfo('name'), i18n('skin_not_supported') % skin_used, icon='special://home/addons/plugin.video.embycon/icon.png')
+            xbmcgui.Dialog().notification(__addon__.getAddonInfo('name'), i18n('skin_not_supported') % skin_used, icon='special://home/addons/script.viewmaster/icon.png')
             self.close()
             return
         self.viewData = skin_views
