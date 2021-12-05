@@ -5,17 +5,20 @@ import sys
 import os
 import time
 import json
-import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 import xbmcplugin
 import xbmcgui
 import xbmcaddon
 import xbmc
 
-from kodi_utils import HomeWindow
-from views import DefaultViews, loadSkinDefaults
-from simple_logging import SimpleLogging
-from translation import i18n
+from resources.lib.kodi_utils import HomeWindow
+from resources.lib.views import DefaultViews, loadSkinDefaults
+from resources.lib.simple_logging import SimpleLogging
+from resources.lib.translation import i18n
 
 __addon__ = xbmcaddon.Addon(id='script.viewmaster')
 __addondir__ = xbmc.translatePath(__addon__.getAddonInfo('profile'))

@@ -6,6 +6,6 @@ def viewNotification(notificationData):
    setView(notificationData['view_type'])
 
 AddonSignals.registerSlot('embycon', 'display_items', viewNotification)
-
-while not xbmc.abortRequested:
+monitor = xbmc.Monitor()
+while not monitor.abortRequested:
     xbmc.sleep(1000)

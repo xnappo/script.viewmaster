@@ -7,8 +7,8 @@ import xbmcaddon
 
 import json
 
-from simple_logging import SimpleLogging
-from translation import i18n
+from resources.lib.simple_logging import SimpleLogging
+from resources.lib.translation import i18n
 
 log = SimpleLogging(__name__)
 __addon__ = xbmcaddon.Addon(id='script.viewmaster')
@@ -108,7 +108,7 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
         if (sortId == None):
             return "None"
 
-        for name, id in self.sortData.iteritems():
+        for name, id in self.sortData.items():
             if id == sortId:
                 return name
 
@@ -118,7 +118,7 @@ class DefaultViews(xbmcgui.WindowXMLDialog):
         if (viewId == None):
             return "None"
 
-        for name, id in self.viewData.iteritems():
+        for name, id in self.viewData.items():
             if id == viewId:
                 return name
 

@@ -1,5 +1,5 @@
 import xbmcaddon
-from simple_logging import SimpleLogging
+from resources.lib.simple_logging import SimpleLogging
 
 log = SimpleLogging(__name__)
 addon = xbmcaddon.Addon(id='script.viewmaster')
